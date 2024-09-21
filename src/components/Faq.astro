@@ -24,7 +24,11 @@ import data from '../data/questions.json'
         question.addEventListener('click', () => {
             const answer = question.nextElementSibling;
             question.classList.toggle('visible');
-            answer.classList.toggle('visible');
+            if (answer) {
+                answer.classList.toggle('visible');
+            } else {
+                console.error('answer error.');
+            }
         });
     });
 </script>
