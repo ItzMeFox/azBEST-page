@@ -1,0 +1,37 @@
+---
+import { Icon } from 'astro-icon/components'
+import navLinks from '../data/navLinks.json'
+---
+
+<nav id="Home">
+    <div class="container nav-container">
+        <a href="#Home" aria-label="logo">
+            <Icon name="logo" width={160} height={50} class="logo" />
+        </a>
+        <div class="nav-wrapper">
+        <ul class="nav-links">
+            {navLinks.map(link => (
+                <li role="none">
+                    <a href={link.url} class={`btn btn--${link.style} nav-link`} >{link.name}</a>
+                </li>
+            ))}
+        </ul>
+        </div>
+        <div class="inner-wrapper">
+            <a href="#Produkty" class=`btn navBtn` aria-label="cart">
+                <Icon name="mdi:cart" width={25} height={25} />
+            </a>
+            <button class="btn btn--menu" id="menu-btn" aria-label="Open mobile nav">
+                <Icon name="ic:round-menu" width={25} height={25} />
+            </button>
+        </div>  
+    </div>
+</nav>
+
+<script>
+    const navBtn = document.querySelector('#menu-btn');
+    navBtn.addEventListener('click', () => {
+        const navLinks = document.querySelector('.nav-links');
+        navLinks.classList.toggle('is-visible');
+    })
+</script>

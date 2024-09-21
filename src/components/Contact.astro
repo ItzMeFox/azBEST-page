@@ -1,0 +1,40 @@
+---
+import { Icon } from 'astro-icon/components'
+---
+
+<section class="contact" id="Kontakt">
+    <div class="container">
+        <h2 class="h2">Kontakt</h2>
+
+        <div class="contact-container">
+            <div class="contact-info">
+                <ul>
+                    <li><Icon name="mdi:map-marker" height={25} width={25} /></li>
+                    <li>Adres</li>
+                    <li>ul. Jedności 9<br>75-401 Koszalin</li>
+                </ul>
+                <ul>
+                    <li><Icon name="mdi:phone" height={25} width={25} /></li>
+                    <li>Telefon</li>
+                    <li><a href="tel:+48600600600">600-600-600</a></li>
+                </ul>
+                <ul>
+                    <li><Icon name="mdi:email" height={25} width={25} /></li>
+                    <li>Email</li>
+                    <li><a href="mailto:mail@mail.com">mail@mail.com</a></li>
+                </ul>
+            </div>
+        
+            <div class="form-section">
+                <form>
+                    <h3>Skontaktuj się z nami</h3>
+                    <input type="text" placeholder="Imię" required>
+                    <input type="email" placeholder="Email" required>
+                    <textarea placeholder="Wiadomość" rows="6" required></textarea>
+                    <button type="submit" class="btn smbtBtn">Wyślij</button>
+                </form>
+            </div>
+
+        </div>
+    </div>
+</section>

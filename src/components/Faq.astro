@@ -1,0 +1,30 @@
+---
+import data from '../data/questions.json'
+---
+
+<section class="Faq" id="Faq">
+    <div class="container">
+        <h2 class="h2">Często zadawane pytania</h2>
+        <div class="faq-cards">
+            <div class="container-s">
+                {data.map(info => (
+                    <div class="faq-card">
+                        <div class="question">{info.question}</div>
+                        <div class="answer">{info.answer}</div>
+                    </div>
+                ))}
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+    const faqQuestions = document.querySelectorAll('.question');
+    faqQuestions.forEach(question => {
+        question.addEventListener('click', () => {
+            const answer = question.nextElementSibling;
+            question.classList.toggle('visible');
+            answer.classList.toggle('visible');
+        });
+    });
+</script>

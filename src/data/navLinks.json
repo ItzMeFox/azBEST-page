@@ -1,0 +1,17 @@
+[
+    {
+        "name": "Produkty",
+        "url": "#Produkty",
+        "style": "transparent"
+    },
+    {
+        "name": "Często zadawane pytania",
+        "url": "#Faq",
+        "style": "transparent"
+    },
+    {
+        "name": "Kontakt",
+        "url": "#Kontakt",
+        "style": "transparent"
+    }
+]

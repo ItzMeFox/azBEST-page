@@ -1,0 +1,29 @@
+[
+    {
+        "image": "/blue.png",
+        "name": "Krokidolit",
+        "description1":"Kolor: Niebieski",
+        "description2":"Struktura krystaliczna: Monoklinalna",
+        "description3":"Gęstość: około 3,2–3,3 g/cm³",
+        "description4":"Twardość: 4–5 w skali Mohsa",
+        "price": "499,99"
+    },
+    {
+        "image": "/orng.png",
+        "name": "Amozyt",
+        "description1":"Kolor: Brązowy",
+        "description2":"Struktura krystaliczna: Monoklinalna",
+        "description3":"Gęstość: około 2,9–3,2 g/cm³",
+        "description4":"Twardość: 5–6 w skali Mohsa",
+        "price": "599,99"
+    },
+    {
+        "image": "/grey.jpg",
+        "name": "Chryzotyl",
+        "description1":"Kolor: Biały",
+        "description2":"Struktura krystaliczna: Monoklinalna",
+        "description3":"Gęstość: około 2,5–2,6 g/cm³",
+        "description4":"Twardość: 2,5–3,5 w skali Mohsa",
+        "price": "399,99"
+    }
+]

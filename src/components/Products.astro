@@ -1,0 +1,41 @@
+---
+import data from '../data/products.json'
+import { Image } from 'astro:assets'
+import { Icon } from 'astro-icon/components'
+---
+
+<section class="products container-sm" id="Produkty">
+    <div class="container">
+        <h2 class="h2">Zapoznaj się z produktami azBEST</h2>
+        <div class="cards">
+        {
+            data.map(product => (
+                <div class="card">
+                    <img src={product.image} alt={product.name} />
+                    <div class="text">
+                        <h3>{product.name}</h3>
+                        <small class="description">
+                            <ul>
+                                <li>{product.description1}</li>
+                                <li>{product.description2}</li>
+                                <li>{product.description3}</li>
+                                <li>{product.description4}</li>
+                            </ul>
+                        </small>
+                        <div class="container-sm">
+                            <div class="price">
+                            <h3>{product.price} zł/m²</h3>
+                            <p>Darmowa dostawa</p>
+                            </div>
+                            <a href="#Home" class="buyBtn" aria-label="cart">
+                                <Icon name="mdi:cart" width={25} height={25} />
+                            </a>
+                        </div>
+                        
+                    </div>
+                </div>
+            ))
+        }
+        </div>
+    </div>
+</section>
